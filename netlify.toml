@@ -1,3 +1,7 @@
 [build]
   publish = "dist"
   command = "npm run generate"
+  functions = "functions/"
+
+[build.environment]
+  AWS_LAMBDA_JS_RUNTIME = "nodejs8.10"
